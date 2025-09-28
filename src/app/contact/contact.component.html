@@ -1,0 +1,66 @@
+<section class="container" [class.display_none]="menuValue">
+  <div class="map">
+    <google-map
+      height="650px"
+      width="1350px"
+      [options]="options"
+    >
+      <map-advanced-marker
+        #markerElem="mapAdvancedMarker"
+        [position]="{ lat: +options.center!.lat, lng: +options.center!.lng }"
+      />
+    </google-map>
+  </div>
+
+  <footer class="py-4">
+    <div class="container">
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-12 mb-3 ">
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center">
+            <i class="bi bi-telephone-fill h4 me-2"></i>
+            <div>
+              <p class="mb-0 fw-bold">Programări</p>
+              <p class="mb-0">0767 043 161</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mb-3">
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center">
+            <i class="bi bi-envelope-fill h4 me-2"></i>
+            <div>
+              <p class="mb-0 fw-bold">Email-ul nostru</p>
+              <p class="mb-0">contactdentalzen@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mb-3">
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center">
+            <i class="bi bi-geo-alt-fill h4 me-2"></i>
+            <div>
+              <p class="mb-0 fw-bold">Adresa noastră</p>
+              <p class="mb-0">Strada Olteț, nr 11, sc 1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mb-3">
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center">
+            <i class="bi bi-clock-fill h4 me-2"></i>
+            <div>
+              <p class="mb-0"><strong>Luni</strong> 12:00-20:00</p>
+              <p class="mb-0"><strong>Marți</strong> 10:00-18:00</p>
+              <p class="mb-0"><strong>Miercuri</strong> 08:00-14:00</p>
+              <p class="mb-0"><strong>Joi</strong> 08:00-14:00</p>
+              <p class="mb-0"><strong>Vineri</strong> 10:00-18:00</p>
+              <p class="mb-0"><strong>Sâmbătă/Duminică</strong> 10:00-14:00 (urgențe)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</section>

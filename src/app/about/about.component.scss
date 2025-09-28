@@ -1,0 +1,69 @@
+video {
+  max-height: 600px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee {
+  margin-bottom: 6rem !important;
+
+  .photo-section img {
+    float: right;
+    object-fit: cover;
+  }
+
+  .description-section p {
+    font-size: 20px;
+  }
+}
+.display_none {
+  display: none;
+}
+@media (max-width: 767px) {
+  .clinic-video-section {
+    .video-div {
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  }
+  .employee {
+    margin-bottom: 2rem !important;
+
+    .photo-section {
+      padding-left: 0!important;
+      padding-right: 0!important;
+      order: 2!important;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+        display: block;
+        width: 98%;
+      }
+    }
+
+    .description-section {
+      order: 1!important;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

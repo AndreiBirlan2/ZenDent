@@ -1,0 +1,23 @@
+// Typography Variables
+$font-primary: 'Playwrite IE Guides', serif; // For headings
+$font-secondary: 'Roboto', sans-serif; // For body text (alternative: 'Open Sans', sans-serif)
+// $color-dark-blue: #003366; // Dark blue for headings
+// $color-gray: #4a4a4a; // Neutral gray for body text
+
+// Headings (H1, H2, H3)
+h1, h2, h3 {
+  font-family: $font-primary;
+  // color: $color-dark-blue;
+  // font-weight: bold;
+  // line-height: 1.4;
+  // margin-bottom: 1rem; // Adjust as needed for spacing
+}
+
+// Body Text (Paragraphs)
+body, p {
+  //nt-family: $font-secondary;
+  // color: $color-gray;
+  // font-weight: normal; // Regular weight
+  // line-height: 1.6;
+  // margin-bottom: 1rem; // Adjust as needed
+}

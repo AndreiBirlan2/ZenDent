@@ -1,0 +1,30 @@
+footer {
+  position:relative;
+  bottom:0px;
+  //background-color:#aae9fa;
+  background: white;
+  width:100%;
+
+  .container {
+    padding-left: 90px;
+  }
+  p, i {
+    color: #6a79b3;
+  }
+
+  p.copy-right-text {
+    margin-top: 1rem;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.display_none {
+  display: none;
+}
+
+@media screen and (min-width: 128px) and (max-width: 900px) {
+  .container {
+    padding-left: 0px !important;
+  }
+}

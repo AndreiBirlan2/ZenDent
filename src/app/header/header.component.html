@@ -1,0 +1,34 @@
+<header [class.fixed_header]="menuValue">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo-container">
+          <a routerLink="/acasa"><img src="assets/Capture.PNG" alt="" class="logo"></a>
+        </div>
+      </div>
+
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div class="menu-icon" (click)="openMenu()">
+          <i class="{{ menuIconClass }}"></i>
+        </div>
+        <div class="desktop_menu" [class.mobile_menu]="menuValue">
+          <ul>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
+              <a routerLink="/acasa">Acasă</a>
+            </li>
+            <li routerLinkActive="active" (click)="closeMenu()">
+              <a routerLink="/despre">Despre</a>
+            </li>
+            <li routerLinkActive="active" (click)="closeMenu()">
+              <a routerLink="/servicii">Servicii și prețuri</a>
+            </li>
+            <li routerLinkActive="active" (click)="closeMenu()">
+              <a routerLink="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

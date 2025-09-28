@@ -1,0 +1,31 @@
+<section [class.display_none]="menuValue">
+  <div class="container py-5">
+    <!-- Video Section -->
+    <div class="row mb-4 clinic-video-section">
+      <div class="col-12 video-div">
+        <video
+          controls
+          class="w-100"
+          aria-label="Video de prezentare clinică"
+        >
+          <source src="assets/clinic-intro.mp4" type="video/mp4" />
+          Browserul dvs. nu acceptă eticheta video.
+        </video>
+      </div>
+    </div>
+
+    <div class="row mb-4 align-items-center employee" *ngFor="let employee of employees; let i = index">
+      <div class="col-md-6 order-md-2 photo-section">
+        <img
+          [src]="employee.photo"
+          [alt]="employee.name"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-md-6 order-md-1 description-section">
+        <h3>{{ employee.name }}</h3>
+        <p>{{ employee.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
